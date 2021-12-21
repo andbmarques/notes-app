@@ -1,0 +1,147 @@
+.background-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 40%;
+    height: 70%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text {
+    cursor: default;
+    margin: 0 1rem;
+    resize: none;
+    font-size: 24px;
+    min-height: 10px;
+    text-align: center;
+}
+
+.edit-title-button {
+    cursor: pointer;
+}
+
+.edit-title-button:hover {
+    color: #1b5ba5;
+}
+
+.edit-description-button {
+    cursor: pointer;
+}
+
+.edit-description-button:hover {
+    color: #1b5ba5;
+}
+
+.description-text {
+    margin-right: 1rem;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.text-area-description {
+    margin-bottom: 5rem;
+    font-size: 20px;
+    resize: none;
+    min-height: 200px;
+    padding: 1rem;
+}
+
+.back-button {
+    display: flex;
+    border: 2px solid #1b5ba5;
+    padding: 1rem 0.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #1b5ba5;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.save-button {
+    display: flex;
+    border: 2px solid #1b5ba5;
+    padding: 1rem 0.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #1b5ba5;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 1rem;
+}
+
+.save-button:hover {
+    color: #ffffff;
+    border: 2px solid #000000;
+    background-color: #000000;
+}
+
+.delete-button {
+    display: flex;
+    border: 2px solid #a51b1b;
+    padding: 1rem 0.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #a51b1b;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    color: #ffffff;
+    border: 2px solid #000000;
+    background-color: #000000;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+}

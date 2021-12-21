@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #111111;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #ffffff;  /* creates padding around scroll thumb */
+  }
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    padding: 1rem;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10rem;
+}
+
+#title-container > i {
+    color: #ffffff;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+#title-container > i:hover {
+    color: #1b5ba5;
+    transform: rotate(-90deg);
+}
+
+#title {
+    color: #ffffff;
+    cursor: default;
+}
+
+#create-notes-container {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#create-note-input {
+    width: 65%;
+    height: 90%;
+    outline: 0;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 2px;
+}
+
+#create-note-input:focus {
+    border-bottom: 3px solid #1b5ba5;
+}
+
+#create-note-button {
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#create-note-button:hover {
+    color: #1b5ba5;
+}
+
+#save-button {
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#save-button:hover {
+    color: #1b5ba5;
+}
+
+#clear-all-button {
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#clear-all-button:hover {
+    color: #1b5ba5;
+}
+
+
+#main {
+    width: 100%;
+    display: flex;
+
+}
+
+#notes-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.note-item {
+    color: #ffffff;
+    background-color: #1b5ba5;
+    height: 2rem;
+    width: 2rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+    #create-note-button, #save-button, #clear-all-button {
+        font-size: 18px;
+        margin: 0 0.3rem;
+    }
+    #title, #title-container > i {
+        font-size: 20px;
+    }
+    #title-container {
+        width: 7rem;
+    }
+    #create-notes-container {
+        width: 12rem;
+    }
+    #create-note-input {
+        width: 65%;
+        padding-left: 0.5rem;
+        margin: 0 0.2rem;
+    }
+    #notes-list > li {
+        padding: 4rem 8rem;
+    }
+}
